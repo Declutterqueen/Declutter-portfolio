@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources – MyBlog</title>
+  <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav>
+  <div class="nav-container">
+    <div class="brand-label">
+      <img src="assets/crown-dark.png" alt="Crown Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- Main Content -->
+  <main class="container">
+   <section class="resource-products">
+  <h2 style="text-align: center; margin-bottom: 2rem;">Top Picks for Home Organization</h2>
+  
+  <div class="resource-grid">
+    
+    <div class="resource-card">
+      <h3>Clear Stackable Bins</h3>
+      <p>Perfect for pantry, bathroom, or fridge storage. Stackable and transparent!</p>
+      <a href="https://www.amazon.com/dp/B0CH9PHTN2"   ,target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Over-the-Door Organizer</h3>
+      <p>Use your door space! Great for shoes, snacks, or kids' items.</p>
+      <a href= "https://www.amazon.com/dp/B0C7V7K9YC"    target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Foldable Storage Cubes</h3>
+      <p>Stylish and easy to store toys, clothes, books, and more.</p>
+      <a href="https://www.amazon.com/dp/B071225BBS" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Drawer Dividers</h3>
+      <p>Organize kitchen, socks, or makeup drawers in minutes.</p>
+      <a href="https://www.amazon.com/dp/B0CTQWQHJ4" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Lazy Susan Turntable</h3>
+      <p>Spin to win! Great for spices, skincare, and hard-to-reach corners.</p>
+      <a href="https://www.amazon.com/dp/B08BZJ5FXD" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 p-4 text-center text-sm text-gray-500">
+    © 2025 Mehreen. Built with 💻 and shared with ✍️
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
+
+

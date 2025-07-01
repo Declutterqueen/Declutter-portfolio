@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Mehreen's Blog Portfolio</title>
+   <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+  <link href="style5.css" rel="stylesheet">
+</head>
+<body class="p-6 font-sans">
+ <nav>
+  <div class="nav-container">
+    <div class="brand-label">
+      <img src="assets/crown-dark.png" alt="Crown Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <h1 class="text-4xl font-bold mb-4">Welcome to My Blog Portfolio</h1>
+  <p class="mb-4">
+    Hi, I'm Mehreen — a <strong>Frontend web Developer</strong> and <strong>Content Writer</strong> who loves combining design with words. I share smart product reviews and blogging tips, especially around Amazon finds and home organization.
+  </p>
+  <a href="blog.html" class="text-blue-600 hover:underline">→ Read my latest blog</a>
+  
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
+

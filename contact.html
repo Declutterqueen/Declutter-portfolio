@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Mehreen - Get in Touch</title>
+  <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+  <link href="style5.css" rel="stylesheet">
+</head>
+<body class="p-6 font-sans max-w-3xl mx-auto">
+ <nav>
+  <div class="nav-container">
+    <div class="brand-label">
+      <img src="assets/crown-dark.png" alt="Crown Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    
+<h2>Let's Connect!</h2>
+<p>If you have a question, collaboration idea, or just want to say hi — feel free to send me a message using the form below. I usually reply within 24–48 hours.</p>
+
+
+  <div class="contact-container">
+    <h1>📬 Contact Me</h1>
+ <form class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <footer>© 2025 Mehreen</footer>
+</body>
+
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
+</body>
+
+</html>
+

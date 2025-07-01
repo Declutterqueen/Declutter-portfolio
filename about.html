@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Mehreen</title>
+    <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+  <link href="style5.css" rel="stylesheet">
+</head>
+<body class="p-6 font-sans max-w-3xl mx-auto">
+  
+ <nav>
+  <div class="nav-container">
+    <div class="brand-label">
+      <img src="assets/crown-dark.png" alt="Crown Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Profile Image -->
+<img src="assets/mehreen.jpg" alt="Mehreen profile" class="photo">
+
+
+
+  <h2 class="text-3xl font-semibold mb-4 text-center">About Me</h2>
+  <p class="mb-4 text-gray-700 text-lg">
+    I'm <strong>Mehreen</strong>, a passionate <strong>frontend web developer</strong> and <strong>blogger</strong> from Pakistan. I love combining clean web design with helpful, practical writing.
+  </p>
+  <p class="mb-4 text-gray-700 text-lg">
+    My blog focuses on <strong>Amazon affiliate content</strong>, especially around <em>home organization, smart products, and lifestyle tips</em>. Every post I write aims to solve a real-life problem while keeping things simple and useful.
+  </p>
+  <p class="mb-6 text-gray-700 text-lg">
+    Whether I'm coding a portfolio or writing a product review, my goal is always the same: make things easier for real people.
+  </p>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
+ 
+
+</body>
+</html>
