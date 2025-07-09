@@ -44,30 +44,34 @@ nav {
   align-items: center;
   width: 100%;
 }
-
 .brand-label {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  font-family: 'Georgia', serif;
+  gap: 4px;
 }
 
 .brand-label img {
-  height: 40px;
-  width: 40px;
-  padding-top: 0;
+  height: 30px;
+  width: 30px;
+  margin-bottom: -8px; /* slight overlap above text */
 }
 
 .brand-label span {
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Georgia', serif;
   color: #540b0e;
+  text-align: center;
 }
 
 .brand-label .highlight {
   color: #c90b0b;
   font-style: italic;
 }
+
+
+ 
 
 .nav-links {
   display: flex;
