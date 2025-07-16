@@ -59,10 +59,11 @@ nav {
 }
 
 .brand-label span {
-  font-size: 1.4rem;
   font-weight: bold;
+  font-size: 2rem;
   color: #540b0e;
   text-align: center;
+  font-family:  'Playfair Display', serif;
 }
 
 .brand-label .highlight {
