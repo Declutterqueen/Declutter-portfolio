@@ -6,9 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Declutter Queen</title>
   <link rel="icon" type="image/x-icon" href="assets/crown-dark.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style5.css" />
+  
 </head>
+
 <body>
+
+
+  <nav>
+    <div class="nav-container">
+      <div class="brand-label">
+        <img src="assets/crown-dark.png" alt="Crown Logo">
+        <span>Declutter <span class="highlight">Queen</span></span>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ 
   <img src="assets/banner.png" alt="Declutter Queen" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
 
   <div class="container">
@@ -60,21 +82,26 @@
     <p style="text-align: center;">Want to see all my decluttering resources and pages?</p>
 
     <div style="text-align: center; margin-top: 2rem;">
-      <a href="blog.html" style="background-color:#583C51; color: white; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
-        👑 View My Full Portfolio
-      </a>
-    </div>
+      <div style="text-align: center; margin-top: 2rem;">
+  <a href="blog.html" class="button">
+    👑 View My Full Portfolio
+  </a>
+  <a href="tips.html" class="button">
+    📌 Decluttering Tips
+  </a>
+</div>
 
-    <div class="footer">
-      © 2025 Mehreen. Built with ❤ and GitHub Pages.
-    </div>
-  </div>
+<div class="footer" style="margin-top: 3rem; text-align: center;">
+  <p><a href="https://theclutteredit.netlify.app" target="_blank" style="color: #583C51; text-decoration: none;">Visit my live Netlify site</a></p>
+  <p>© 2025 Mehreen. Built with ❤ and GitHub Pages.</p>
+</div>
   <script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('active');
-  }
-</script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
+
