@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="assets/crown-dark.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style5.css" />
 </head>
 
@@ -67,13 +68,97 @@
 
   
 
-    <h2 style="text-align: center; margin-top: 3rem;">Explore More</h2>
+    <!--<h2 style="text-align: center; margin-top: 3rem;">Explore More</h2>
     <p style="text-align: center;">Check out my latest blog posts and favorite tools:</p>
 
     <div style="text-align: center; margin-top: 2rem;">
       <a href="blog.html" class="button"> Read My Blog</a>
       <a href="tips.html" class="button"> Decluttering Tips</a>
+    </div>-->
+
+
+<section class="recent-posts" style="padding: 60px 0; background: #faedcd;">
+  <div class="container" style="max-width: 1100px; margin: 0 auto;">
+    <h2 style="text-align: center;  font-size: 2rem; margin-bottom: 50px; color: #222;">
+      Explore More
+    </h2>
+
+    <div style="
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    ">
+
+      <!-- Blog Card -->
+      <a href="blog.html" style="
+        display: block;
+        background-color: #faedcd;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        width: 400px;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+      " 
+      onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 16px 32px rgba(0,0,0,0.12)';" 
+      onmouseout="this.style.transform=''; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';">
+
+        <img src="assets/portfolio-preview.jpg" alt="Minimalist blog illustration" style="
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+          display: block;
+        ">
+        <div style="padding: 20px;">
+          <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 12px;">Read My Blog</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+            Insights and stories on minimalism, home organization, and mindful living.
+          </p>
+        </div>
+      </a>
+
+      <!-- Tips Card -->
+      <a href="tips.html" style="
+        display: block;
+        background-color: #faedcd;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        width: 400px;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+      " 
+      onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 16px 32px rgba(0,0,0,0.12)';" 
+      onmouseout="this.style.transform=''; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)';">
+
+        <img src="assets/tips.jpg" alt="Decluttering tips image" style="
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+          display: block;
+        ">
+        <div style="padding: 20px;">
+          <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 12px;">Decluttering Tips</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+            Practical strategies and easy steps to clear clutter and simplify your home.
+          </p>
+        </div>
+      </a>
+
     </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
     <div class="footer" style="margin-top: 3rem; text-align: center;">
       <p><a href="https://theclutteredit.netlify.app" target="_blank" style="color: #583C51; text-decoration: none;">Visit my live Netlify site</a></p>
