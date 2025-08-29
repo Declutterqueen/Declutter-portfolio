@@ -1,10 +1,13 @@
 /* === GENERAL STYLES === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color:#faedcd ;
+  background-color: #faedcd;
   color: #333;
   margin: 0;
-  padding: 1rem ;
+  padding: 0;   
+}
+html, body {
+  overflow-x: hidden;   
 }
 
 h1, h2, h3 {
@@ -24,26 +27,48 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
-
-/* === NAVIGATION === */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: #d4a373;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  font-family:  'Poppins', sans-serif;
-  align-items: center;
-  color: #540b0e;
+.banner-img {
+  width: 100%;
+  height: auto;          /* let the height adjust naturally */
+  max-width: 100%;       /* remove extra restriction */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* If your banner is inside a fixed-height container */
+.banner-container {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;       /* prevents scrollbars */
+}
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+ display: block;
+  border-radius: 12px;
+}
+
+
+/* === NAVIGATION === */
+
+nav {
+  width: 100%;
+  background-color:#e7c8a0 ;
+  padding: 5px 20px ;
+  color: #521e1f;
+  position: fixed; 
+  top: 0;
+ z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul {
+  display: flex;
+  gap: 20px;       
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -55,10 +80,40 @@ nav {
   gap: 4px;
 }
 
-.brand-label img {
+.nav-container {
+  max-width: 1200px;     
+  margin: 0 auto;         
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;  
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; 
+}
+
+.nav-links a {
+  text-decoration: none;
+ color:  #683b3c; ;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap; 
+  transition: color 0.3s ease;
+}
+
+/*.brand-label img {
   height: 50px;
   width: 50px;
-  margin-bottom: -8px; /* slight overlap above text */
+  margin-bottom: -8px; 
 }
 
 .brand-label span {
@@ -71,19 +126,32 @@ nav {
 .brand-label .highlight {
   color: #c90b0b;
   font-style: italic;
-}
-
-.nav-links {
+}*/
+.brand-label {
   display: flex;
-  list-style: none;
-  gap: 30px;
-  margin-right: 3rem;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  gap: 4px;
 }
 
-.nav-links a {
+.brand-label img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: -8px;
+}
+
+.brand-label span {
+  font-size: 2rem;
+  font-weight: bold;
   color: #540b0e;
-  text-decoration: none;
-  font-weight: 500;
+  text-align: center;
+  font-family:  'Playfair Display', serif;
+}
+
+.brand-label .highlight {
+  color: #c90b0b;
+  font-style: italic;
 }
 
 .nav-links a:hover {
@@ -91,15 +159,6 @@ nav {
   text-decoration: underline;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  margin-right: 2rem;
-}
 
 nav ul li a {
   color:#540b0e ;
@@ -115,25 +174,29 @@ nav, .nav-links a {
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* === IMAGES === */
-img {
-  height: 20px;
-  width: 900px;
-  object-fit: cover;
-  border-radius: 5%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
+
 
 .photo{
+  text-align: center;
   height: 150px;
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 3rem;
+  margin-bottom: -3rem;
+  margin-top: 5rem;
+}
+.product-img {
+  width: 100%;
+  max-width: 700px;
+  height: 400px; /* fixed height (adjust as needed) */
+  object-fit: cover; /* crops evenly */
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.product-img {
+/*.product-img {
   width: 100%;
   max-width: 700px;
   height: auto;
@@ -141,7 +204,23 @@ img {
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}*/
+.btn-link {
+  display: inline-block;
+  border: 2px solid #d4a373;
+  color: #d4a373;
+  padding: 12px 20px;
+  border-radius: 50px; /* pill shape */
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
+
+.btn-link:hover {
+  background-color: #d4a373;
+  color: #fff;
+}
+
 
 /* === TEXT & LINKS === */
 a {
@@ -191,13 +270,23 @@ p {
   font-size: 0.95rem;
 }
 
-/* === FOOTER (optional) === */
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-}
+  .footer-btn {
+    display: inline-block;
+    margin: 0 10px;
+    background: linear-gradient(135deg, #f7f3e9, #e5d4b8);
+    /*background-color: #faf4e8;*/
+    color: #222;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .footer-btn:hover {
+    background-color: #a56f38; /* hover background */
+    color: #9b7b7b; /* hover text */
+  }
 
 .contact-form {
   background: #faedcd;
@@ -267,18 +356,54 @@ footer {
   background-color: #c78f64;
 }
 
-/* === GENERAL MOBILE FIRST STYLES === */
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
+
+
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
+}
+.resource-products h2 {
+  margin-top: 24px; 
+}
+main.container {
+  padding-top: 30px; /* nav ki height + thoda gap */
+}
+.blog-h1{
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+.blog-h1 {
+  font-size: 2.5rem; /* big but not overwhelming */
+  font-weight: 700; 
+  text-align: center;
+  color: #333; /* dark gray for elegance */
+  margin: 2rem 0 1.5rem;
+  line-height: 1.3;
+
+  /* subtle style effects */
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.blog-h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4a373, #928a5e);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
 }
 
 .blog-card {
@@ -304,22 +429,26 @@ nav ul li a {
   font-weight: bold;
 }
 
+
+
+
 @media (max-width: 768px) {
   nav {
     background-color: #DDCCA1;
     text-align: left;
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+   
+      width: 100%;
   }
 
   nav ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    margin-left: 1rem;
+    margin-left: 0;
   }
-
+  
   nav ul li a {
     color: #000;
     font-size: 1.1rem;
@@ -345,6 +474,21 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+  .banner-container img {
+    border-radius: 8px;   /* Slightly smaller radius */
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner-container img {
+    border-radius: 6px;   /* Softer edges on small screens */
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+
   .menu-toggle {
     display: block;
   }
@@ -381,7 +525,7 @@ nav ul li a {
 }
 
 .resource-card {
-  background-color:#FFEFE3;
+  background-color:#fcf4d7;
   border: 1px solid #f0f0f0;
   padding: 1.5rem;
   border-radius: 8px;
@@ -402,4 +546,47 @@ nav ul li a {
   color: #444;
   font-size: 0.95rem;
   margin-bottom: 1rem;
+}
+/* --- Banner + fixed-nav offset --- */
+:root { --nav-h: 76px; }          /* desktop nav height */
+body { padding-top: var(--nav-h); }/* keeps content (incl. banner) below the fixed nav */
+
+.banner-wrap{
+  max-width: 1100px;               /* matches your page width */
+  margin: 0 auto 2rem;
+  padding: 0 16px;                  /* small side padding on mobile */
+}
+
+.banner-img{
+  display:block;
+  width:100%;
+  height:auto;                      /* show full image, no crop */
+  border-radius:12px;
+}
+
+/* If any earlier global img rules set fixed sizes, override them safely */
+img{ max-width:100%; height:auto; }
+
+/* Tablet */
+@media (max-width: 768px){
+  :root { --nav-h: 88px; }         /* nav is taller on mobile */
+  .banner-img{ border-radius:10px; }
+}
+
+/* Small phones */
+@media (max-width: 480px){
+  :root { --nav-h: 96px; }         /* extra space for compact screens */
+  .banner-wrap{ padding: 0 12px; }
+  .banner-img{ border-radius:8px; }
+}
+/* Adjust body top padding so banner text is not hidden under fixed navbar */
+body {
+  padding-top: 120px; /* increase until first line is visible */
+}
+
+/* Mobile adjustment */
+@media (max-width: 480px) {
+  body {
+    padding-top: 140px; /* extra space for small screen nav */
+  }
 }
