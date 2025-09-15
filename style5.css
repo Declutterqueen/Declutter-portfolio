@@ -287,6 +287,10 @@ p {
     background-color: #a56f38; /* hover background */
     color: #9b7b7b; /* hover text */
   }
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+}
 
 .contact-form {
   background: #faedcd;
@@ -379,11 +383,10 @@ img {
 main.container {
   padding-top: 30px; /* nav ki height + thoda gap */
 }
-.blog-h1{
-  padding-top: 110px;
-  padding-bottom: 50px;
-}
+
 .blog-h1 {
+  padding-top: 40px;
+  padding-bottom: 50px;
   font-size: 2.5rem; /* big but not overwhelming */
   font-weight: 700; 
   text-align: center;

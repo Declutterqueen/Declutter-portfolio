@@ -10,35 +10,98 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style5.css" />
   <style>
-      footer {
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+   margin-top: 1rem; 
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  color: #444;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #c53b5d; /* yellow underline accent */
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* ---------- Paragraphs ---------- */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ---------- Emphasized text ---------- */
+em {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ---------- Strong highlight ---------- */
+strong {
+  color: #222;
+  font-weight: 600;
+}
+
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+
+      /*footer {
       margin-top: 40px;
       margin-bottom: 20px;
       font-size: 0.9em;
       color: #777;
       text-align: center;
-    }
+    }*/
   </style>
 
 </head>
 <body>
-
-  <nav>
-    <div class="nav-container">
-      <div class="brand-label">
-        <img src="assets/crown-dark.png" alt="Declutter Queen logo">
-        <span>Declutter <span class="highlight">Queen</span></span>
-      </div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="storage.html">Storage</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <main class="container">
     <h1>5 Decluttering Mistakes You're Probably Making — and How to Fix Them</h1>
