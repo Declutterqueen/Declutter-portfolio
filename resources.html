@@ -3,6 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources – Declutter Queen</title>
+  <link rel="icon" type="image/x-icon" href="assets/crown-dark.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style5.css" />
+
+  <style>
+    /* Buttons */
+    .btn-link1 {
+      display: inline-block;
+      background-color: #a98467;
+      color: #540b05;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .btn-link1:hover {
+      transform: scale(1.05);
+    }
+
+    /* Resource Grid */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+   .resource-card {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #e7c8a0; /* keep your theme color */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    /*.resource-card h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #333;
+    }
+*/
+    .resource-card p {
+      margin-bottom: 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="brand-label">
+        <img src="assets/crown-dark.png" alt="Crown Logo">
+        <span>Declutter <span class="highlight">Queen</span></span>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li class="dropdown">
+          <a href="storage.html" class="dropdown-toggle">Storage <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="best-storage-bins.html">Best Storage Bins</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="resource-products">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Top Picks for Home Organization</h2>
+      
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Clear Stackable Bins</h3>
+          <p>Perfect for pantry, bathroom, or fridge storage. Stackable and transparent!</p>
+          <a href="https://www.amazon.com/dp/B0CH9PHTN2" target="_blank" class="btn-link1">Buy on Amazon</a>
+        </div>
+
+        <div class="resource-card">
+          <h3>Over-the-Door Organizer</h3>
+          <p>Use your door space! Great for shoes, snacks, or kids' items.</p>
+          <a href="https://www.amazon.com/dp/B0C7V7K9YC" target="_blank" class="btn-link1">Buy on Amazon</a>
+        </div>
+
+        <div class="resource-card">
+          <h3>Foldable Storage Cubes</h3>
+          <p>Stylish and easy to store toys, clothes, books, and more.</p>
+          <a href="https://www.amazon.com/dp/B071225BBS" target="_blank" class="btn-link1">Buy on Amazon</a>
+        </div>
+
+        <div class="resource-card">
+          <h3>Drawer Dividers</h3>
+          <p>Organize kitchen, socks, or makeup drawers in minutes.</p>
+          <a href="https://www.amazon.com/dp/B0CTQWQHJ4" target="_blank" class="btn-link1">Buy on Amazon</a>
+        </div>
+
+        <div class="resource-card">
+          <h3>Lazy Susan Turntable</h3>
+          <p>Spin to win! Great for spices, skincare, and hard-to-reach corners.</p>
+          <a href="https://www.amazon.com/dp/B08BZJ5FXD" target="_blank" class="btn-link1">Buy on Amazon</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #403d39; color: #faf4e8; padding: 60px 20px; text-align: center; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h3 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 20px; color: #faf4e8;">Stay Connected</h3>
+      <p style="font-size: 1rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+        Discover more tips, guides, and storage solutions to simplify your home. Follow me or visit my live site for updates and inspiration.
+      </p>
+      
+      <div style="margin-bottom: 40px;">
+        <a href="https://theclutteredit.netlify.app" target="_blank" class="footer-btn">Visit My Netlify Site</a>
+        <a href="contact.html" target="_blank" class="footer-btn">Contact Me</a>
+      </div>
+
+      <p style="font-size: 0.95rem;">© 2025 Mehreen. Built with ❤ and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resources – MyBlog</title>
   <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -13,7 +173,7 @@
   .btn-link1{
   display: inline-block;
   background-color: #a98467;
-  /*background: linear-gradient(135deg, #f7f3e9, #e5d4b8);*/
+  
 color: #540b05;  
 
   padding: 12px 24px;
@@ -32,7 +192,7 @@ color: #540b05;
 </head>
 <body>
 
-  <!-- Navbar -->
+
    <nav>
   <div class="nav-container">
     <div class="brand-label">
@@ -55,7 +215,7 @@ color: #540b05;
     </ul>
   </div>
 </nav>
-  <!-- Main Content -->
+ 
   <main class="container">
    <section class="resource-products">
   <h2 style="text-align: center; margin-bottom: 2rem;">Top Picks for Home Organization</h2>
@@ -119,7 +279,6 @@ color: #540b05;
 </footer>
 
 
-  <!-- Script -->
   <script>
     function toggleMenu() {
       const nav = document.getElementById('navLinks');
@@ -127,6 +286,6 @@ color: #540b05;
     }
   </script>
 </body>
-</html>
+</html>-->
 
 
