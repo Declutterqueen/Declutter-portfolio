@@ -183,7 +183,7 @@ nav, .nav-links a {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: -3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .product-img {
   width: 100%;
@@ -804,3 +804,4 @@ body {
     border-radius: 6px;
   }
 }
+
